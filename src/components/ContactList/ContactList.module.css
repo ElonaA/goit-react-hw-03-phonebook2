@@ -1,0 +1,26 @@
+.item {
+  display: flex;
+ align-items: center;
+  padding: 5px 17px;
+  border-bottom: 1px dotted #f7630c;
+
+  }
+
+
+.list {
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.button{
+   padding: 5px;
+   margin-left: auto;
+   border: none;
+   font: inherit;
+   color: inherit;
+   background-color: transparent;
+   border-radius: 50%;
+   cursor: pointer;
+   border: 1px solid #f7630c;
+}
