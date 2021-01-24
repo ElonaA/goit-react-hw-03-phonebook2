@@ -90,7 +90,7 @@ componentDidUpdate(prevProps, prevState) {
         <h1 className="title">Phonebook</h1>
         <ContactForm onSubmit={this.handleSubmit} />
 
-        <h2 className="title">Contacts</h2>
+        
         {contacts.length > 1 && (
           <Filter filter={filter} onChangeFilter={this.handleFilter} />
         )}
