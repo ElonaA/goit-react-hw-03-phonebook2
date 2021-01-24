@@ -83,7 +83,7 @@ componentDidUpdate(prevProps, prevState) {
   }
 
   render() {
-    const { filter } = this.state;
+    const { filter, contacts } = this.state;
     
     return (
       <div className="container">
@@ -91,8 +91,9 @@ componentDidUpdate(prevProps, prevState) {
         <ContactForm onSubmit={this.handleSubmit} />
 
         <h2 className="title">Contacts</h2>
-        <Filter filter={filter} onChangeFilter={this.handleFilter} />
-
+        {contacts.length > 1 && (
+          <Filter filter={filter} onChangeFilter={this.handleFilter} />
+        )}
         <ContactList data={this.filteredContacts()} onDeleteButton={this.handleDelete} />
 
         <ToastContainer autoClose={3000} />
